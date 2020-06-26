@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyFavView" customModule="QuoteApp" customModuleProvider="target">
+            <connections>
+                <outlet property="noFavoriteLabel" destination="95v-wo-m1f" id="Dvg-N4-icH"/>
+                <outlet property="tableView" destination="auf-lf-VMc" id="UbE-SK-DLL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="auf-lf-VMc">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There is no favorite quotes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95v-wo-m1f">
+                    <rect key="frame" x="105" y="437.5" width="204" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="auf-lf-VMc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="2FW-wx-fHZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="auf-lf-VMc" secondAttribute="bottom" id="2qr-wN-HqV"/>
+                <constraint firstItem="95v-wo-m1f" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8dG-uc-83p"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="auf-lf-VMc" secondAttribute="trailing" id="N0C-7v-5Uj"/>
+                <constraint firstItem="95v-wo-m1f" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ebY-Dr-guZ"/>
+                <constraint firstItem="auf-lf-VMc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="f1i-ev-1KR"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="141" y="141"/>
+        </view>
+    </objects>
+</document>
